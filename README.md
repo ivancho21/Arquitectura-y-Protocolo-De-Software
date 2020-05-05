@@ -25,7 +25,7 @@ Bueno el problema a solucionar es la creación del programa en donde pueda tener
 ### Stakeholders
 ![](https://user-images.githubusercontent.com/64091521/81080185-14a87d80-8eb6-11ea-9efe-d337ecb4769d.PNG)
 
-###Lista De Requerimientos
+### Lista De Requerimientos
 ![](https://user-images.githubusercontent.com/64091521/81080755-b8922900-8eb6-11ea-8d64-80d014022fc5.PNG)
 
 ### Mockups
