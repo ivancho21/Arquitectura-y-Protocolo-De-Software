@@ -3,9 +3,6 @@ JORGE IVAN PINZON VEGA
 
 UNIVERSIDAD DE SAN BUENAVENTURA
 
-# Arquitectura-y-Protocolo-De-Software
-Aca van tareas y los documentos del proyecto final 
-
 # PROYECTO FINAL
 
 ### Lógica Del Programa
