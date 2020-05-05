@@ -6,9 +6,9 @@ UNIVERSIDAD DE SAN BUENAVENTURA
 # Arquitectura-y-Protocolo-De-Software
 Aca van tareas y los documentos del proyecto final 
 
-#PROYECTO FINAL
+# PROYECTO FINAL
 
-###Lógica Del Programa
+### Lógica Del Programa
 
 En la lógica del programa podemos encontrar que el objetivo general del programa es poder crear una aplicación para ordenador por medio de java en donde se pueda colocar o se pueda generar una interacción con los jugadores en donde entre ellos puedan jugar una serie de juegos ya definido por medio de código dentro del programa.
 
