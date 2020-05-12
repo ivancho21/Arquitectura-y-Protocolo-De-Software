@@ -39,3 +39,15 @@ En esta arquitectura de software es la que se denomina como cliente servidor, en
 ### Interfaz Grafica
 ![](https://user-images.githubusercontent.com/64091521/81081271-5259d600-8eb7-11ea-974a-3b1225ce5f44.PNG)
 ![](https://user-images.githubusercontent.com/64091521/81081275-52f26c80-8eb7-11ea-8e91-16a9e3edaa74.PNG)
+
+### MVC
+![MVC](https://user-images.githubusercontent.com/64091521/81704225-2bf5e680-9433-11ea-9b3e-f18854115b81.PNG)
+Conexión: Es la que obtiene las clases únicas de conexión la cual contiene las clases de conexión a la BD y la conexión al chat de discord
+
+Imágenes: Es la que tiene todas las imágenes y iconos usadas en el programa
+
+Interface: Es la que contiene todas las interfaces y los mein para que el programa funcione todos los paneles botones etc
+
+Juego_PingPong: Es la que contiene uno de los juegos de ping pong todas las clases y todas las afirmaciones del ping pong 
+
+Com.toy.anagrams.control: Es la que contiene el tema del controlador grafico dl juego para un buen funcionamiento del juego
