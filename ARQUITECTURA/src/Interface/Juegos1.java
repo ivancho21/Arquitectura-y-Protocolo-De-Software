@@ -5,6 +5,9 @@
  */
 package Interface;
 
+import ClaseNecesarias.ConexionFriv;
+import Conexion.Discord;
+import Conexion.Friv;
 import Juego_PingPong.Ventana;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -34,7 +37,7 @@ public class Juegos1 extends javax.swing.JFrame {
 
         Titulo = new javax.swing.JLabel();
         jButtonJ1 = new javax.swing.JButton();
-        jButtonJ2 = new javax.swing.JButton();
+        Friv = new javax.swing.JButton();
         jButtonJ3 = new javax.swing.JButton();
         jButtonJ4 = new javax.swing.JButton();
         jButtonJ5 = new javax.swing.JButton();
@@ -63,16 +66,17 @@ public class Juegos1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonJ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 130, 70));
 
-        jButtonJ2.setBackground(new java.awt.Color(0, 0, 51));
-        jButtonJ2.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
-        jButtonJ2.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonJ2.setText("Juego #2");
-        jButtonJ2.addActionListener(new java.awt.event.ActionListener() {
+        Friv.setBackground(new java.awt.Color(0, 0, 51));
+        Friv.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        Friv.setForeground(new java.awt.Color(255, 255, 255));
+        Friv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/F.png"))); // NOI18N
+        Friv.setText("Friv");
+        Friv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonJ2ActionPerformed(evt);
+                FrivActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonJ2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 130, 70));
+        getContentPane().add(Friv, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 130, 70));
 
         jButtonJ3.setBackground(new java.awt.Color(0, 0, 51));
         jButtonJ3.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
@@ -136,9 +140,11 @@ public class Juegos1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonJ2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonJ2ActionPerformed
-        JOptionPane.showMessageDialog(null, "Juego No Disponible", "Error", JOptionPane.WARNING_MESSAGE);
-    }//GEN-LAST:event_jButtonJ2ActionPerformed
+    private void FrivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FrivActionPerformed
+        Friv f = new Friv() {};
+        f.getConection();
+        JOptionPane.showMessageDialog(null, "Espero Disfrutes Estos Juegos", "Good", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_FrivActionPerformed
 
     private void jButtonJ3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonJ3ActionPerformed
         JOptionPane.showMessageDialog(null, "Juego No Disponible", "Error", JOptionPane.WARNING_MESSAGE);
@@ -206,11 +212,11 @@ public class Juegos1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Friv;
     private javax.swing.JLabel Juegos1;
     private javax.swing.JLabel Titulo;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonJ1;
-    private javax.swing.JButton jButtonJ2;
     private javax.swing.JButton jButtonJ3;
     private javax.swing.JButton jButtonJ4;
     private javax.swing.JButton jButtonJ5;

@@ -5,6 +5,8 @@
  */
 package Interface;
 
+import Conexion.Discord;
+
 
 /**
  *
@@ -31,6 +33,7 @@ public class Panel_Central extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        Discord = new javax.swing.JButton();
         jLabelPanel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,7 +51,7 @@ public class Panel_Central extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 190, 50));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 190, 50));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 51));
         jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
@@ -60,7 +63,21 @@ public class Panel_Central extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 240, 50));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 240, 50));
+
+        Discord.setBackground(new java.awt.Color(0, 0, 51));
+        Discord.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        Discord.setForeground(new java.awt.Color(255, 255, 255));
+        Discord.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/discord.png"))); // NOI18N
+        Discord.setText("Discord");
+        Discord.setToolTipText("");
+        Discord.setActionCommand("");
+        Discord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DiscordActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Discord, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 180, 50));
 
         jLabelPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1_1.jpg"))); // NOI18N
         getContentPane().add(jLabelPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 494));
@@ -78,6 +95,11 @@ public class Panel_Central extends javax.swing.JFrame {
         Juegos1 obj=new Juegos1();
         obj.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void DiscordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DiscordActionPerformed
+        Discord d = new Discord();
+        d.getInstance();
+    }//GEN-LAST:event_DiscordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,6 +137,7 @@ public class Panel_Central extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Discord;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabelPanel;

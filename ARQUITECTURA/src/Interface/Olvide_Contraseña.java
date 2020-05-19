@@ -6,7 +6,7 @@
 package Interface;
 
 
-import Conexion_BD.ConexionBD;
+import Conexion.ConexionBD;
 import java.awt.event.WindowEvent;
 import java.sql.Connection;
 import java.sql.SQLException;

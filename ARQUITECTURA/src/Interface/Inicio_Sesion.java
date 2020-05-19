@@ -5,7 +5,7 @@
  */
 package Interface;
 
-import Conexion_BD.ConexionBD;
+import Conexion.ConexionBD;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
